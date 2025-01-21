@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { checkUsername, signUp } from "../services/authapi";
+import { checkUsername, signUp } from "../services/authAPI";
 import { useDispatch, useSelector } from "react-redux";
 import { Button } from "../components/common/Button";
 import Input from "../components/common/Input";
