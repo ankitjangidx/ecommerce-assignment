@@ -5,8 +5,8 @@ import { IoMdClose } from "react-icons/io";
 import { MdMenu } from "react-icons/md";
 import { LiaCartPlusSolid } from "react-icons/lia";
 import { useDispatch, useSelector } from "react-redux";
-import { logout } from "../../services/authapi";
 import { Button } from "./Button";
+import { logout } from "../../services/authAPI";
 
 const Header = () => {
   const navigate = useNavigate();
