@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../components/common/Button";
 import { useDispatch, useSelector } from "react-redux";
-import { login } from "../services/authapi";
 import Input from "../components/common/Input";
+import { login } from "../services/authAPI";
 
 function Login() {
   const [username, setUsername] = useState("");
