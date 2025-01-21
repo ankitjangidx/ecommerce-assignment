@@ -1,7 +1,7 @@
 const User = require("../models/User");
 const jwt = require("jsonwebtoken");
 
-exports.signup = async (req, res) => {
+const signup = async (req, res) => {
   try {
     const { username, password } = req.body;
 
@@ -40,7 +40,7 @@ exports.signup = async (req, res) => {
   }
 };
 
-exports.login = async (req, res) => {
+const login = async (req, res) => {
   try {
     const { username, password } = req.body;
 
@@ -99,7 +99,7 @@ exports.login = async (req, res) => {
   }
 };
 
-exports.checkUsername = async (req, res) => {
+const checkUsername = async (req, res) => {
   try {
     const { username } = req.body;
 
@@ -127,4 +127,10 @@ exports.checkUsername = async (req, res) => {
       error: error.message
     });
   }
+};
+
+module.exports = {
+  signup,
+  login,
+  checkUsername,
 };
