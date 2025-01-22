@@ -2,12 +2,9 @@ import React from "react";
 import { dummyProducts } from "../constants/dummyProducts";
 import ProductCard from "../components/core/Home/ProductCard";
 
-
-
-export const Home = () => {
+const Home = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      
       {/* Main content */}
       <main className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
         <div className="mb-8">
@@ -28,3 +25,4 @@ export const Home = () => {
     </div>
   );
 };
+export default Home;

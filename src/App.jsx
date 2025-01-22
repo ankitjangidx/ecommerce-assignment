@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Navigate, Route, Routes } from "react-router";
 import Signup from "./pages/Signup";
 import Login from "./pages/Login";
-import { Home } from "./pages/Home";
+import Home from "./pages/Home";
 import OpenRoute from "./components/Auth/OpenRoute";
 import HeaderLayout from "./components/common/HeaderLayout";
 import { useSelector } from "react-redux";
@@ -13,10 +13,16 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route element={<HeaderLayout />}>
-        <Route
-          path="/"
-          element={user!=null ? <Navigate to="/login" /> : <Navigate to="/homepage" />}
-        />
+          <Route
+            path="/"
+            element={
+              user != null ? (
+                <Navigate to="/login" />
+              ) : (
+                <Navigate to="/homepage" />
+              )
+            }
+          />
           <Route
             path="/signup"
             element={
